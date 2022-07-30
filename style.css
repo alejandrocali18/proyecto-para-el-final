@@ -5,7 +5,7 @@
 
 /*empieza los grid*/
 body{
-    background-color: rgba(216, 216, 203, 0.733);
+    background-color: rgba(237, 237, 230, 0.733);
 }
 .gridPadre {
     
@@ -22,6 +22,7 @@ body{
     border: 3px dashed black;
     margin: 25px;
     padding: 25px;
+    background-image: linear-gradient(white , orange);
 
 }
 
@@ -37,7 +38,19 @@ h1 {
     text-decoration: line-through;
     color: red
 }
-
+@keyframes TituloPrin {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+h1{
+    animation-duration: 1s;
+    animation-name: TituloPrin;
+    animation-iteration-count: infinite;
+}
 .logo {
     width: 100px;
     border-radius: 100%;
@@ -63,6 +76,7 @@ li {
 }
 
 a {
+    color: chocolate;
     text-decoration: none;
 }
 
@@ -203,7 +217,7 @@ img {
 @media screen and (max-width: 480px) {
     
     .gridPadre div{
-        background-color: rgb(226, 113, 43);
+        background-color: rgb(241, 234, 230);
     }
     .titulo{
         grid-template: 1/4;
@@ -223,6 +237,12 @@ img {
     }
     .bloqueImagenes{
         grid-template: 1/4
+    }
+    .tituloUno{
+        font-size: 49px ;
+    }
+    .tituloDos{
+        font-size: 49px;
     }
     /*media queries para la Pag inicio*/
     .pag{
