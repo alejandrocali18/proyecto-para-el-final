@@ -1,29 +1,24 @@
+
 * {
     margin: 0%;
     padding: 0%;
 }
 
 /*empieza los grid*/
-body{
+body {
     background-color: rgba(237, 237, 230, 0.733);
 }
+
 .gridPadre {
-    
-    width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-
 }
 
 .gridPadre div {
     text-align: center;
-    border: 3px dashed black;
-    margin: 25px;
-    padding: 25px;
-    background-image: linear-gradient(white , orange);
-
+    border: 1px dashed black;
+    background-image: linear-gradient(white, orange);
 }
 
 /*titulos*/
@@ -38,19 +33,23 @@ h1 {
     text-decoration: line-through;
     color: red
 }
+
 @keyframes TituloPrin {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-h1{
+
+h1 {
     animation-duration: 1s;
     animation-name: TituloPrin;
     animation-iteration-count: infinite;
 }
+
 .logo {
     width: 100px;
     border-radius: 100%;
@@ -59,10 +58,7 @@ h1{
 /*menu*/
 #menu {
     grid-column: 1/4;
-    margin: auto;
-    padding: auto;
 }
-
 ul {
     list-style: none;
     font-size: 0;
@@ -70,9 +66,15 @@ ul {
 
 li {
     display: inline-block;
-    width: 250px;
     position: relative;
     font-size: 20px;
+    width: 250px;
+
+}
+
+nav {
+    justify-content: center;
+   display: flex;
 }
 
 a {
@@ -98,11 +100,13 @@ img {
 
 /*derecha*/
 .esquina {
-    font-size: 13px;
+    font-size: 28px;
 }
-.derecha{
+
+.derecha {
     display: flex;
     justify-content: center;
+    grid-column: 3/4;
 }
 
 /*footer*/
@@ -145,8 +149,7 @@ h3 {
 .pag div {
     text-align: center;
     border: 3px solid black;
-    margin: 25px;
-    padding: 25px;
+    
 }
 
 /*titulos*/
@@ -157,8 +160,7 @@ h3 {
 /*menu*/
 #pagMenu {
     grid-column: 1/5;
-    margin: auto;
-    padding: auto;
+    
 }
 
 ul {
@@ -168,9 +170,9 @@ ul {
 
 li {
     display: inline-block;
-    width: 250px;
     position: relative;
     font-size: 20px;
+    width: 215px;
 }
 
 a {
@@ -184,6 +186,7 @@ a {
 
 .flexPadre {
     display: flex;
+    font-size: 29px;
 }
 
 img {
@@ -215,86 +218,116 @@ img {
 /*media queries mobil*/
 
 @media screen and (max-width: 480px) {
-    
-    .gridPadre div{
+
+    .gridPadre div {
         background-color: rgb(241, 234, 230);
     }
-    .titulo{
-        grid-template: 1/4;
+
+    .titulo {
+        grid-column: 1/4;
     }
-    #menu{
-        grid-template:2/4 ;
+
+    #menu {
+        grid-template: 2/4;
     }
-    #menu li{
+
+    #menu li {
         display: block
     }
-    .derecha{
+
+    .derecha {
         display: none;
+
     }
-    .flexPadre{
+
+    .flexPadre {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
-    .bloqueImagenes{
+
+    .bloqueImagenes {
         grid-template: 1/4
     }
-    .tituloUno{
-        font-size: 49px ;
-    }
-    .tituloDos{
+
+    .tituloUno {
         font-size: 49px;
     }
+
+    .tituloDos {
+        font-size: 49px;
+    }
+
     /*media queries para la Pag inicio*/
-    .pag{
+    .pag {
         display: block;
 
     }
-    h1{
+
+    h1 {
         font-size: 50px;
     }
-    
-        
-   
-    .pagVideo{
+
+
+
+    .pagVideo {
         display: none;
     }
-    
+
 }
+
 /*media queries mobil fin*/
 
 /*media queries para tablet*/
-@media screen and (max-width: 768px){
-    .main{
+@media screen and (max-width: 768px) {
+    .main {
         background-color: yellow;
     }
-    .titulo{
+
+    .titulo {
         grid-template: 1/4;
     }
-    #menu{
-        grid-template:2/4 ;
+
+    #menu {
+        grid-template: 2/4;
     }
-    #menu li{
-        display: block
+
+    #menu li {
+        display: inline;
+    
     }
-    .derecha{
-        grid-column: 1/4 ;
+ul{
+    text-align:center
+}
+    .derecha {
+        grid-column: 1/4;
     }
-    .flexPadre{
+
+    .flexPadre {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
-    .bloqueImagenes{
-        grid-template: 1/4
+
+    .bloqueImagenes {
+        grid-column: 1/4;
     }
+
     /*pag media queries para tablet*/
 
-    .pag{
+    .pag {
         display: block;
     }
-    
-    h1{
+
+    h1 {
         font-size: 50px;
     }
-   
+
 }
+
 /*media queries para tablet*/
+
+img{
+    justify-content: center;
+}
+
+
+/*usamos bootstrap*/
