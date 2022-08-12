@@ -46,7 +46,7 @@ body {
     color: yellow;
     display: inline-block; }
     #menu li:hover {
-      color: black; }
+      color: #d0d615; }
   #menu a {
     color: chocolate; }
 
@@ -97,24 +97,15 @@ p {
   #menu li {
     display: block; }
   .derecha {
-    grid-column: 1/4; }
+    grid-column: 1/2; }
   .flexPadre {
     display: flex;
     flex-direction: column; }
   .bloqueImagenes {
     grid-column: 1/4; } }
 
-@media screen and (max-width: 1023px) {
-  .titulo {
-    grid-column: 1/4; }
-  #menu {
-    grid-column: 1/4; }
-  #menu li {
-    display: block; }
-  .derecha {
-    grid-column: 1/4; }
-  .flexPadre {
-    display: flex;
-    flex-direction: column; }
-  .bloqueImagenes {
-    grid-column: 1/4; } }
+body {
+  background-image: linear-gradient(red, #d47b2e);
+  border: solid 1px black;
+  margin: 20px;
+  padding: 23px; }

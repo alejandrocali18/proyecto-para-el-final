@@ -62,7 +62,7 @@ body {
         color: yellow;
         display: inline-block;
         &:hover{
-            color: black;
+            color: rgb(208, 214, 21);
         }
     }
     a {
@@ -97,7 +97,7 @@ p {
     text-transform: uppercase;
 
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){
     .titulo{
         grid-column: 1/4;
     }
@@ -129,7 +129,7 @@ p {
         display: block
     }
     .derecha{
-        grid-column: 1/4 ;
+        grid-column: 1/2 ;
     }
     .flexPadre{
         display: flex;
@@ -139,24 +139,6 @@ p {
         grid-column: 1/4;
     }
 }
-@media screen and (max-width: 1023px){
-    .titulo{
-        grid-column: 1/4;
-    }
-    #menu{
-        grid-column:1/4 ;
-    }
-    #menu li{
-        display: block
-    }
-    .derecha{
-        grid-column: 1/4 ;
-    }
-    .flexPadre{
-        display: flex;
-        flex-direction:column;
-    }
-    .bloqueImagenes{
-        grid-column: 1/4;
-    }
-}
+@import "header";
+
+$color_titulos: red
