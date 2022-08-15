@@ -139,6 +139,77 @@ p {
 }
 @import "header";
 
+.pag{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    
+  .pag div {
+    text-align: center;
+    border: 2px dashed black;
+  
+  }
+  }
+  /*titulos*/
+  .pagTitulo {
+    grid-column: 1/5;
+  }
+  
+  /*menu*/
+  #pagMenu {
+    grid-column: 1/5;
+  
+  }
+  
+  ul {
+    list-style: none;
+    font-size: 0;
+    li {
+        display: inline-block;
+        position: relative;
+        font-size: 20px;
+        width: 215px;
+      }
+      a {
+        text-decoration: none;
+      }
+      
+  }
+  /*imagenes*/
+  .pagImg {
+    grid-column: 1/4;
+  }
+  
+  .flexPadre {
+    display: flex;
+    font-size: 29px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /*derecha*/
+  .pagVideo {
+    grid-column: auto;
+  }
+  
+  .pagVideo p {
+    font-size: 20px;
+  }
+  
+  /*footer*/
+  .pagFoo {
+    grid-column: 1/5;
+  }
+  
+  .pagIframe {
+    font-size: 100%;
+  }
+  
+  img {
+    justify-content: center;
+  }
 $color_titulos: red
 
-/*empezamos con las paginas*/
