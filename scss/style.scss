@@ -248,4 +248,8 @@ main {
     background-color: map-get($estilos,color);
     border: 1px solid black;
     border-radius: 20px;
+} 
+/* no sabia donde poner o en que usar el extend por eso no lo aplique aun */
+@mixin cuadrado ($lado) {
+    
 }
