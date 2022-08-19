@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(241, 217, 217),rgb(212, 123, 46));
+    background-image: linear-gradient(rgb(241, 217, 217),rgb(146, 245, 168));
     .gridPadre {
         width: 100%;
         margin: 0 auto;
@@ -211,5 +211,41 @@ p {
   img {
     justify-content: center;
   }
-$color_titulos: red
+/*mapas*/
 
+$redes: (
+    twitter:red,
+    instagram:green,
+    facebook:blue,
+    send-mail:white, 
+);
+$color: (
+    red,
+    blue,
+    green,
+);
+@each $red, $color in $redes{
+    
+}
+$estilos: (
+    color:rgb(249, 245, 245),
+    centro:center
+);
+div {
+    background-color: map-get($estilos,$color);
+} 
+@each $color in blue,yellow,red,aqua,green {
+    .#{$color} {
+        color: #{$color};
+    }
+}
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+main {
+    background-color: map-get($estilos,color);
+    border: 1px solid black;
+    border-radius: 20px;
+}

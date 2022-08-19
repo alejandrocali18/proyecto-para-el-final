@@ -3,7 +3,7 @@
   padding: 0%; }
 
 body {
-  background-image: linear-gradient(#f1d9d9, #d47b2e); }
+  background-image: linear-gradient(#f1d9d9, #92f5a8); }
   body .gridPadre {
     width: 100%;
     margin: 0 auto;
@@ -164,3 +164,36 @@ img {
 
 img {
   justify-content: center; }
+
+/*mapas*/
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+.red {
+  color: red; }
+
+.aqua {
+  color: aqua; }
+
+.green {
+  color: green; }
+
+.btn--twitter {
+  background-color: red; }
+
+.btn--instagram {
+  background-color: green; }
+
+.btn--facebook {
+  background-color: blue; }
+
+.btn--send-mail {
+  background-color: white; }
+
+main {
+  background-color: #f9f5f5;
+  border: 1px solid black;
+  border-radius: 20px; }
