@@ -1,5 +1,28 @@
-body{
-    border: solid 1px black;
+header{
     margin: 20px;
     padding: 23px;
+    justify-content: center;
+    h1{
+        font-size: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: line-through;
+        color: red;
+        animation-duration: 1s;
+        animation-name: TituloPrin;
+        animation-iteration-count: infinite;
+        @keyframes TituloPrin {
+            0% {
+                opacity: 0;
+            }
+        
+            100% {
+                opacity: 1;
+            }
+        }
+        .logo {
+            width: 100px;
+            border-radius: 100%;
+        }
+    }
 }
