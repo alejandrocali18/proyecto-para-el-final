@@ -184,6 +184,9 @@ img {
   justify-content: center; }
 
 /*mapas*/
+div {
+  margin-top: 40px; }
+
 .blue {
   color: blue; }
 

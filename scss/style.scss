@@ -233,6 +233,7 @@ $estilos: (
 );
 div {
     background-color: map-get($estilos,$color);
+    margin-top: 40px;
 } 
 @each $color in blue,yellow,red,aqua,green {
     .#{$color} {
