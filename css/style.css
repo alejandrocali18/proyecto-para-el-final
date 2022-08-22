@@ -23,7 +23,7 @@ body {
     width: 100px;
     border-radius: 100%; }
   .titulo h1 {
-    font-size: 100px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: line-through;
@@ -109,7 +109,7 @@ header {
   padding: 23px;
   justify-content: center; }
   header h1 {
-    font-size: 100px;
+    font-size: 33px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: line-through;
