@@ -3,9 +3,11 @@
     padding: 0%;
 }
 
-body {
-    background-image: linear-gradient(rgb(241, 217, 217),rgb(146, 245, 168));
+body{
+   /* background-image: linear-gradient(white, orange);*/
+
     .gridPadre {
+        background-image: linear-gradient(white, orange);
         width: 100%;
         margin: 0 auto;
         display: grid;
@@ -17,18 +19,16 @@ body {
             border: 3px dashed black;
             margin: 25px;
             padding: 25px;
-            background-image: linear-gradient(white, orange);
         }
     }
 }
 
+p {
+    text-align: center;
+}
+
 .titulo {
     grid-column: 1/4;
-
-    .logo {
-        width: 100px;
-        border-radius: 100%;
-    }
 
     h1 {
         font-size: 20px;
@@ -51,225 +51,243 @@ body {
         opacity: 1;
     }
 }
-#menu {
-    grid-column: 1/4;
-    ul {
-        list-style: none;
-    }
-    li {
-        color: yellow;
-        display: inline-block;
-        &:hover{
-            color: rgb(208, 214, 21);
-        }
-    }
-    a {
-        color: chocolate;
-    }
+
+.navbar {
+    text-align: center;
 }
+
 .bloqueImagenes {
     grid-column: 1/3;
+
     .flexPadre {
         display: flex;
-        background-color: bisque;
         justify-content: center;
     }
 }
+
 img {
     width: 150px;
     height: 150px;
 }
+
 .esquina {
-    font-size: 13px;
-    .derecha{
+
+    .derecha {
         display: flex;
         justify-content: center;
-    }    
+    }
 }
+
 .foot {
     grid-column: 1/4;
 }
 
-p {
-    color: brown;
-    text-transform: uppercase;
-
+.bloqueNav {
+    text-align: center;
 }
-@media screen and (max-width: 480px){
-    .titulo{
+
+@media screen and (max-width: 480px) {
+    .titulo {
         grid-column: 1/4;
     }
-    #menu{
-        grid-column:2/4 ;
+
+    #menu {
+        grid-column: 2/4;
     }
-    #menu li{
+
+    #menu li {
         display: block
     }
-    .derecha{
+
+    .derecha {
         display: none;
     }
-    .flexPadre{
+
+    .flexPadre {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
-    .bloqueImagenes{
+
+    .bloqueImagenes {
         grid-column: 1/4
     }
 }
-@media screen and (max-width: 768px){
-    .titulo{
+
+@media screen and (max-width: 768px) {
+    .titulo {
         grid-column: 1/4;
     }
-    #menu{
-        grid-column:1/4 ;
+
+    #menu {
+        grid-column: 1/4;
     }
-    #menu li{
+
+    #menu li {
         display: block
     }
-    .derecha{
-        grid-column: 1/2 ;
+
+    .derecha {
+        grid-column: 1/2;
     }
-    .flexPadre{
+
+    .flexPadre {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
-    .bloqueImagenes{
+
+    .bloqueImagenes {
         grid-column: 1/4;
     }
 }
+
 @import "header";
 
-.pag{
+.pag {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     
-  .pag div {
-    text-align: center;
-    border: 2px dashed black;
-  
-  }
-  }
-  /*titulos*/
-  .pagTitulo {
+
+    .pag div {
+        text-align: center;
+        border: 2px dashed black;
+
+    }
+}
+
+/*titulos*/
+.pagTitulo {
     grid-column: 1/5;
-  }
-  
-  /*menu*/
-  #pagMenu {
+}
+
+/*menu*/
+#pagMenu {
     grid-column: 1/5;
-  
-  }
-  
-  ul {
+
+}
+
+ul {
     list-style: none;
     font-size: 0;
+
     li {
         display: inline-block;
         position: relative;
         font-size: 20px;
         width: 215px;
-      }
-      a {
+    }
+
+    a {
         text-decoration: none;
-      }
-      
-  }
-  /*imagenes*/
-  .pagImg {
+    }
+
+}
+
+/*imagenes*/
+.pagImg {
     grid-column: 1/4;
-  }
-  
-  .flexPadre {
+}
+
+.flexPadre {
     display: flex;
     font-size: 29px;
-  }
-  
-  img {
+}
+
+img {
     width: 150px;
     height: 150px;
-  }
-  
-  /*derecha*/
-  .pagVideo {
+}
+
+/*derecha*/
+.pagVideo {
     grid-column: auto;
-  }
-  
-  .pagVideo p {
+}
+
+.pagVideo p {
     font-size: 20px;
-  }
-  
-  /*footer*/
-  .pagFoo {
+}
+
+/*footer*/
+.pagFoo {
     grid-column: 1/5;
-  }
-  
-  .pagIframe {
+}
+
+.pagIframe {
     font-size: 100%;
-  }
-  
-  img {
+}
+
+img {
     justify-content: center;
-  }
+}
+
 /*mapas*/
 
 $redes: (
     twitter:red,
     instagram:green,
     facebook:blue,
-    send-mail:white, 
+    send-mail:white,
 );
 $color: (
     red,
     blue,
     green,
 );
-@each $red, $color in $redes{
-    
-}
+
+@each $red,
+$color in $redes {}
+
 $estilos: (
     color:rgb(249, 245, 245),
     centro:center
 );
+
 div {
-    background-color: map-get($estilos,$color);
+    background-color: map-get($estilos, $color);
     margin-top: 40px;
-} 
-@each $color in blue,yellow,red,aqua,green {
+}
+
+@each $color in blue,
+yellow,
+red,
+aqua,
+green {
     .#{$color} {
         color: #{$color};
     }
 }
-@each $red, $color in $redes {
+
+@each $red,
+$color in $redes {
     .btn--#{$red} {
         background-color: $color;
     }
 }
+
 .boton {
     width: 100%;
     height: 50px;
-    background-color: map-get($estilos,color);
+    background-color: map-get($estilos, color);
     border: 1px solid black;
     border-radius: 20px;
     text-align: center;
 }
-.boton--aceptar{
-    @extend .boton;
-    background-color: green;
-    color: black;
-}
-.boton--cancelar{
-    @extend .boton;
-    background-color: red;
-    color: black;
-} 
+
 /* no sabia donde poner o en que usar el extend por eso no lo aplique aun */
 @mixin cuadrado ($lado) {
     width: $lado;
     height: $lado;
 }
-div.cuadrado{
-    background-color: greenyellow;
-    @include cuadrado(100%);
-    border: dashed 3px black;
+body.uno{
+    background-color: antiquewhite;
+}
+body.tres{
+    background-color: aquamarine;
+}
+body.cuatro{}
+body.cinco{
+    background-color: rgb(185, 128, 240);
+}
+body.seis{
+    background-color: rgb(75, 244, 137);
 }

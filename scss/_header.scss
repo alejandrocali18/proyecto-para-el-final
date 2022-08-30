@@ -3,9 +3,7 @@ header{
     padding: 23px;
     justify-content: center;
     h1{
-        font-size: 33px;
         text-align: center;
-        text-transform: uppercase;
         text-decoration: line-through;
         color: red;
         animation-duration: 1s;
@@ -20,7 +18,7 @@ header{
                 opacity: 1;
             }
         }
-        .logo {
+        .imglogo {
             width: 100px;
             border-radius: 100%;
         }

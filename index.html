@@ -7,151 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="trabajos, electricidad, albañileria">
     <meta name="descrition" content="trabajos de obra, desdes cero, todos los oficios">
+    <link rel="shortcut icon" href="./imagenes/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <title>Roal construcciones</title>
 </head>
 
-<body>
+<body class="uno">
     <main class="gridPadre, container">
         <!--titulo-->
-        <div class="titulo, col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2">
+        <section>
             <header>
-                <img src="./imagenes/lider.jpeg" alt="..." class="logo">
+                <img src="./imagenes/logo.jpg" alt="..." class="imglogo">
                 <h1 class="TituloPrin">
-                    roal construcciones
+                    Roal
                 </h1>
-                <h2>
-                    empresa dedicada a la construccion con personal multitareas SRL
-                </h2>
-                <h3>Telefono:1151199969</h3>
+                <p class="lead">
+                    Empresa dedicada a la construccion con personal multitareas SRL
+                </p>
             </header>
-        </div>
-        <!--fin titulo-->
-
-        <!--empieza el menu-->
-
-        <div id="menu" class="col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2">
-            <div>
-                <h2>trabajos de:</h2>
-            </div>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="paginas/Electricidad.html" target="">Electricidad</a>
-                    </li>
-                    <li>
-                        <a href="paginas/durlock.html" target="">Durlock</a>
-                    </li>
-                    <li>
-                        <a href="paginas/Albañileria.html" target="">Albañileria</a>
-                    </li>
-                    <li>
-                        <a href="paginas/Plomeria.html" target="">Plomeria</a>
-                    </li>
-                    <li>
-                        <a href="paginas/Pintura.html" target="">Pintura</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!--termina el menu-->
-        <!--empieza imagenes-->
-        <div class="bloqueImagenes, col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2">
-            
-            <h3>
-                Imagenes de obras desdes cero y proyeccion de obra
-            </h3>
-            <section class="flexPadre">
-                <div class="card-deck">
-                    <div class="card">
-                      <img class="card-img-top" src="imagenes/portada.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">lanus</h5>
-                        <p class="card-text">Replanteo del encofrado de las columnas
-                            posicion, medidas, refuerzos y distribucion de los carpinteros, albañiles</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="imagenes/lider.jpeg" alt="Card image cap">
-                      <div class="card-body">
-                        <h3 class="card-title">lomas de zamora</h3>
-                        <p class="card-text">Planeacion del cerco electrico, iluminacion de obra, bandejas escaleras
-                            y perforadas
-                            para la alimentacion de los tableros y la circulacion de cables UTP para las pacheras de
-                            datos
-                            y sus respectivos puestos de trabajo</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="imagenes/portada1.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">budgue</h5>
-                        <p class="card-text">planificacion de las biguetas y distribucion de los ladrillos de
-                            tergopol con sus respectivos
-                            puntales y
-                            refuerzos para el llenado de la loza</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                 
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Roal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Oficios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="paginas/Electricidad.html">Electricidad</a></li>
+                                <li><a class="dropdown-item" href="paginas/Construccion.html">Construccion</a></li>
+                                <li><a class="dropdown-item" href="paginas/durlock.html">Durlock</a></li>
+                                <li><a class="dropdown-item" href="paginas/Pintura.html">Pintura</a></li>
+                                <li><a class="dropdown-item" href="paginas/Plomeria.html">Plomeria</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </nav>
+        <!--fin titulo-->
+        <!--empieza imagenes-->
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="imagenes/portada.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lanus</h5>
+                    <p class="card-text">Replanteo del encofrado de las columnas
+                        posicion, medidas, refuerzos y distribucion de los carpinteros, albañiles.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="imagenes/no.pice.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lomas de Zamora</h5>
+                    <p class="card-text">Planeacion del cerco electrico, iluminacion de obra, bandejas escaleras
+                        y perforadas
+                        para la alimentacion de los tableros y la circulacion de cables UTP para las pacheras de
+                        datos
+                        y sus respectivos puestos de trabajo.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="imagenes/portada1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Budge</h5>
+                    <p class="card-text">Planificacion de las biguetas y distribucion de los ladrillos de
+                        tergopol con sus respectivos
+                        puntales y
+                        refuerzos para el llenado de la loza.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
         </div>
+        <!--afasf-->
         <!--termina imagenes-->
 
         <!--como empezo esta idea-->
-        <div class="derecha, col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2">
-            <aside class="esquina">
-                <h3>Como empezo esta idea</h3>
-                <p class="lead">
-                    En una juntada de amigos y amigas todos pensamos que podiamos hacer para salir adelante lo cual
-                    muchos
-                    aportamos ideas y tratamos de mezclar
-                    nuestros trabajos o nuestros estudios para medianamente hacer algo entre todos. Las ideas en si
-                    fueron
-                    vender ropa zapatillas hacer trabajos
-                    de algun oficio remis y entre otras cosas.
-                    Al final optamos por hacer un prototipo de empresa con todos los oficios y empezamos a trabajar nos
-                    llamaron para hacer todo una casa o algun trabajo en espesifico ya sea
-                    electrico o pintura.
-                </p>
-            </aside>
-        </div>
+
+        <article class="esquina">
+            <p class="">
+                En una juntada de amigos y amigas todos pensamos que podiamos hacer para salir adelante lo cual
+                muchos
+                aportamos ideas y tratamos de mezclar
+                nuestros trabajos o nuestros estudios para medianamente hacer algo entre todos. Las ideas en si
+                fueron
+                vender ropa zapatillas hacer trabajos
+                de algun oficio remis y entre otras cosas.
+                Al final optamos por hacer un prototipo de empresa con todos los oficios y empezamos a trabajar nos
+                llamaron para hacer todo una casa o algun trabajo en espesifico ya sea
+                electrico o pintura.
+            </p>
+        </article>
+
         <!--como termino esta idea-->
-<div class="cuadrado, col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2">
-    <button class="boton">meee</button>
-    <button class="boton--aceptar">gusta</button>
-    <button class="boton--cancelar">no gusta</button>
-</div>
         <!--empieza el footer-->
-        <div class="foot, col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2">
-            <footer class="bloqueFooter">
-                <P class="parrafoFoo">presupuestos sin cargo atendemos
-                    situaciones de emergencias las 24 horas</P>
-                <nav class="bloqueNav, col-12">
-                    <a href="https://www.instagram.com/">instagram</a>
-                    <a href="https://www.google.com.ar/maps/@-34.7470793,-58.4515826,15z">ubicacion</a>
-                    <a href="https://es-la.facebook.com/">facebook</a>
-                </nav>
-            </footer>
-        </div>
+
+        <footer class="bloqueFooter">
+            <p class="parrafoFoo">Presupuestos sin cargo atendemos
+                situaciones de emergencias las 24 horas</p>
+            <p>Telefono:1151199969</p>
+            <nav class="bloqueNav">
+                <a href="https://www.instagram.com/" class="bg-dark">Instagram</a>
+                <a href="https://www.google.com.ar/maps/@-34.7470793,-58.4515826,15z" class="bg-dark">Ubicacion</a>
+                <a href="https://es-la.facebook.com/" class="bg-dark">Facebook</a>
+            </nav>
+        </footer>
+
         <!--termina el footer-->
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+<!--, col-12, col-sm-6, col-md-4, col-lg-3, col-xl-2, col-xxl-2-->
 
 </html>

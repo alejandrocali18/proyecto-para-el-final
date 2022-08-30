@@ -3,8 +3,9 @@
   padding: 0%; }
 
 body {
-  background-image: linear-gradient(#f1d9d9, #92f5a8); }
+  /* background-image: linear-gradient(white, orange);*/ }
   body .gridPadre {
+    background-image: linear-gradient(white, orange);
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -14,14 +15,13 @@ body {
       text-align: center;
       border: 3px dashed black;
       margin: 25px;
-      padding: 25px;
-      background-image: linear-gradient(white, orange); }
+      padding: 25px; }
+
+p {
+  text-align: center; }
 
 .titulo {
   grid-column: 1/4; }
-  .titulo .logo {
-    width: 100px;
-    border-radius: 100%; }
   .titulo h1 {
     font-size: 20px;
     text-align: center;
@@ -38,41 +38,28 @@ body {
   100% {
     opacity: 1; } }
 
-#menu {
-  grid-column: 1/4; }
-  #menu ul {
-    list-style: none; }
-  #menu li {
-    color: yellow;
-    display: inline-block; }
-    #menu li:hover {
-      color: #d0d615; }
-  #menu a {
-    color: chocolate; }
+.navbar {
+  text-align: center; }
 
 .bloqueImagenes {
   grid-column: 1/3; }
   .bloqueImagenes .flexPadre {
     display: flex;
-    background-color: bisque;
     justify-content: center; }
 
 img {
   width: 150px;
   height: 150px; }
 
-.esquina {
-  font-size: 13px; }
-  .esquina .derecha {
-    display: flex;
-    justify-content: center; }
+.esquina .derecha {
+  display: flex;
+  justify-content: center; }
 
 .foot {
   grid-column: 1/4; }
 
-p {
-  color: brown;
-  text-transform: uppercase; }
+.bloqueNav {
+  text-align: center; }
 
 @media screen and (max-width: 480px) {
   .titulo {
@@ -109,9 +96,7 @@ header {
   padding: 23px;
   justify-content: center; }
   header h1 {
-    font-size: 33px;
     text-align: center;
-    text-transform: uppercase;
     text-decoration: line-through;
     color: red;
     animation-duration: 1s;
@@ -123,7 +108,7 @@ header {
     opacity: 0; }
   100% {
     opacity: 1; } }
-    header h1 .logo {
+    header h1 .imglogo {
       width: 100px;
       border-radius: 100%; }
 
@@ -214,7 +199,7 @@ div {
 .btn--send-mail {
   background-color: white; }
 
-.boton, .boton--aceptar, .boton--cancelar {
+.boton {
   width: 100%;
   height: 50px;
   background-color: #f9f5f5;
@@ -222,17 +207,15 @@ div {
   border-radius: 20px;
   text-align: center; }
 
-.boton--aceptar {
-  background-color: green;
-  color: black; }
-
-.boton--cancelar {
-  background-color: red;
-  color: black; }
-
 /* no sabia donde poner o en que usar el extend por eso no lo aplique aun */
-div.cuadrado {
-  background-color: greenyellow;
-  width: 100%;
-  height: 100%;
-  border: dashed 3px black; }
+body.uno {
+  background-color: antiquewhite; }
+
+body.tres {
+  background-color: aquamarine; }
+
+body.cinco {
+  background-color: #b980f0; }
+
+body.seis {
+  background-color: #4bf489; }
